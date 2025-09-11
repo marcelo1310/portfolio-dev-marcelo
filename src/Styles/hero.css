@@ -19,7 +19,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(33, 37, 41, 0.6);
   z-index: 0;
 }
 
@@ -44,14 +44,16 @@
   justify-content: center;
   border-radius: 100%;
   width: 250px;
-  background-color: var(--branco);
-  
+  background-color: var(--vermelho);
+  box-shadow: 0 0 10px 5px rgba(194, 49, 18, 0.5);  
 }
+
 
 .hero-area-img img {
   width: 95%;
   margin: 2%;
   border-radius: 100%;
+  filter: brightness(80%) contrast(110%);
 }
 
 .hero-text {
@@ -78,7 +80,7 @@ span {
 }
 
 span {
-  color: var(--verde);
+  color: var(--vermelho);
   font-size: 2.5rem;
 }
 

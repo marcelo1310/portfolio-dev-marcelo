@@ -5,20 +5,24 @@
   height: 600px;
   padding: 2rem;
   text-align: center;
-  color: white;
+  color: var(--branco);
+  background-color: var(--cinza1);
 }
 
 .habilidades-container h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  background-color: transparent;
 }
 
 .habilidades-container ul {
   list-style: none;
   padding: 0;
+  background-color: transparent;
 }
 
 .habilidades-container li {
   font-size: 1.25rem;
   margin: 0.5rem 0;
+  background-color: transparent;
 }

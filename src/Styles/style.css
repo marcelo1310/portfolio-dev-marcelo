@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #151422;
+  background-color: var(--grafite);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +17,9 @@ body {
 }
 
 :root {
-  --branco: #fff;
-  --verde:  #22cfc1;
+  --branco: #fefefe;
+  --vermelho:  #c23112;
+  --grafite:#212529;
+  --cinza1: #343a40;
+  --cinza2: #909294;
 }

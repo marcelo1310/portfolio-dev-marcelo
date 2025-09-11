@@ -1,8 +1,8 @@
 export function Header() {
   const header = document.createElement("header");
   header.innerHTML = `
-  <div class="header-container">
-    <div class="header-logo"></div>
+  <div id="header" class="header-container">
+    <a href="#" class="header-logo">MS</a>
     <button class="menu-toggle" aria-label="Abrir Menu">☰</button>
     <nav class="header-nav">
         <ul>
@@ -21,6 +21,19 @@ export function Header() {
   toggle.addEventListener("click", () => {
     menu.classList.toggle("show");
   });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const headerscroll = document.getElementById('header');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      headerscroll.classList.add('scrolled');
+    } else {
+      headerscroll.classList.remove('scrolled');
+    }
+  });
+});
+
 
   return header;
 }

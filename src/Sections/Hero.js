@@ -18,7 +18,7 @@ export function Hero() {
     </div>
   `;
 
-  const btnChamada = Botao("Contate-me", "#sobre");
+  const btnChamada = Botao("Contate-me", "#contato", "animacao-sombra");
   hero.querySelector(".btn-container").appendChild(btnChamada);
 
   const btnProjetos = Botao("Projetos", "#projetos");

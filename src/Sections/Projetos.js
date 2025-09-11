@@ -1,7 +1,7 @@
 export function Projetos() {
   const projetos = document.createElement("section");
   projetos.innerHTML = `
-    <div class="projetos-container">
+    <div id="projetos" class="projetos-container">
         <h2>Meus Projetos</h2>
         <ul>
             <li>Projeto 1</li>

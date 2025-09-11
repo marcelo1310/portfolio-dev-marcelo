@@ -1,7 +1,7 @@
 export function Contato() {
   const contato = document.createElement("section");
   contato.innerHTML = `
-    <div class="contato-container">
+    <div id="contato" class="contato-container">
         <h2>Contato</h2>
         <form>
             <label for="name">Nome:</label>
