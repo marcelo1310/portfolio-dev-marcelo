@@ -1,0 +1,29 @@
+.botao {
+    
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    background-color: var(--verde);
+    color: var(--branco);
+    font-weight: bold;
+}
+
+.botao:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+.botao {
+    font-size: 1.3rem;
+}
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1440px) {
+
+
+}

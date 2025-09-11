@@ -1,0 +1,158 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-image: url(../img/img-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
+  margin: 0 8px;
+  background-color: transparent;
+  align-items: center;
+}
+
+.hero-area-img {
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  width: 250px;
+  background-color: var(--branco);
+  
+}
+
+.hero-area-img img {
+  width: 95%;
+  margin: 2%;
+  border-radius: 100%;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+}
+
+.text-area {
+  background-color: transparent;
+}
+
+.hero-text h1,
+p,
+span {
+  background-color: transparent;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+}
+
+span {
+  color: var(--verde);
+  font-size: 2.5rem;
+}
+
+.minha-funcao {
+  font-size: 1.5rem;
+}
+
+.btn-container {
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+  justify-content: space-around
+}
+
+
+
+
+
+
+@keyframes mark {
+  50% {
+    border-right: transparent;
+  }
+}
+
+@keyframes write {
+  20% {
+    width: 22.5ch;
+  }
+  70% {
+    width: 22.5ch;
+  }
+  85% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .hero-text h1 {
+  font-size: 2.5rem;
+}
+
+  .hero-area-img {
+    width: 350px;
+}
+
+span{
+  font-size: 3rem;
+}
+}
+
+@media (min-width: 1024px) {
+  .hero-container {
+      flex-direction: row;
+      max-width: 70%;
+       gap: 10rem;
+  }
+
+  .hero-area-img {
+  order: 2;
+}
+ 
+.hero-text {
+  order: 1;
+}
+}
+
+@media (min-width: 1440px) {
+span{
+  font-size: 3.5rem;
+}
+}
+
