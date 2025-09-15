@@ -15,7 +15,7 @@ export function Header() {
   </div>
     `;
 
-  const toggle = header.querySelector(".menu-toggle");
+  const toggle = header.querySelector(".menu-toggle", ".header-link");
   const menu = header.querySelector(".header-nav");
 
   toggle.addEventListener("click", () => {
