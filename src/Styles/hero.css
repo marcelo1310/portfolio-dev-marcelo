@@ -31,25 +31,23 @@
 .hero-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-around;
   width: 100%;
   height: 80%;
   margin: 0 8px;
   background-color: transparent;
-  align-items: center;
 }
 
 .hero-area-img {
   display: flex;
   justify-content: center;
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   aspect-ratio: 1/1;
   background-color: var(--vermelho);
-  box-shadow: 0 0 10px 5px rgba(194, 49, 18, 0.5);  
 }
-
 
 .hero-area-img img {
   display: block;
@@ -62,9 +60,9 @@
 .hero-text {
   display: flex;
   flex-direction: column;
-  height: 40%;
+  height: 50%;
   align-items: center;
-  justify-content: space-around;
+  gap: 30px;
   background-color: transparent;
 }
 
@@ -79,29 +77,23 @@ span {
 }
 
 .hero-text h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 span {
   color: var(--vermelho);
-  font-size: 2.5rem;
 }
 
-.minha-funcao {
-  font-size: 1.5rem;
+.hero-text {
+  font-size: 1.2rem;
 }
 
-.btn-container {
+.area-btn {
   display: flex;
   width: 100%;
   background-color: transparent;
-  justify-content: space-around
+  justify-content: space-around;
 }
-
-
-
-
-
 
 @keyframes mark {
   50% {
@@ -124,41 +116,51 @@ span {
   }
 }
 
-
 @media (min-width: 768px) {
-  .hero-text h1 {
-  font-size: 2.5rem;
-}
-
-  .hero-area-img {
-    width: 300px;
-    height: 300px;
-}
-
-span{
-  font-size: 3rem;
-}
-}
-
-@media (min-width: 1024px) {
-  .hero-container {
-      flex-direction: row;
-      max-width: 70%;
-       gap: 10rem;
+  .hero-text {
+    width: 60%;
   }
 
   .hero-area-img {
-  order: 2;
+    width: 250px;
+    height: 250px;
+  }  
+
 }
- 
-.hero-text {
-  order: 1;
-}
+
+@media (min-width: 1024px) {
+
+  .hero-text {
+    width: 50%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.8rem;
+  }
+  .hero-container {
+    flex-direction: row;
+    max-width: 90%;
+    gap: 10rem;
+  }
+
+  .hero-area-img {
+     width: 300px;
+    height: 300px;
+    order: 2;
+  }
+
+  .hero-text {
+    max-width: 50%;
+    order: 1;
+  }
 }
 
 @media (min-width: 1440px) {
-span{
-  font-size: 3.5rem;
-}
-}
+  .hero-text {
+    width: 40%;
+  }
 
+  .hero-container {
+    max-width: 80%;
+  }
+}

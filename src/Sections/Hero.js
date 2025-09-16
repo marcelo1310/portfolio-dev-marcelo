@@ -9,20 +9,19 @@ export function Hero() {
       <div class="hero-area-img"><img src="${img}" alt="Imagem de destaque" /></div>
       <div class="hero-text">
         <div class="text-area">
-         <h1>Olá, sou o <span>Marcelo</span></h1>
-          <p class="minha-funcao">Desenvolvedor de sistemas</p>
+         <h1>Transformo <span>ideias</span> em <span>soluções digitais</span> inteligentes</h1>
         </div>
-        <p>Sou um desenvolvedor web apaixonado por criar experiências digitais incríveis.</p>
-        <div class="btn-container"></div>
+        <p>Meu foco é desenvolver aplicações modernas, escaláveis e centradas no usuário, ajudando empresas a se destacarem no ambiente digital.</p>
+        <div class="area-btn"></div>
       </div>
     </div>
   `;
 
   const btnChamada = Botao("Contate-me", "#contato", "animacao-sombra");
-  hero.querySelector(".btn-container").appendChild(btnChamada);
+  hero.querySelector(".area-btn").appendChild(btnChamada);
 
   const btnProjetos = Botao("Projetos", "#projetos");
-  hero.querySelector(".btn-container").appendChild(btnProjetos);
+  hero.querySelector(".area-btn").appendChild(btnProjetos);
 
   return hero;
 }
