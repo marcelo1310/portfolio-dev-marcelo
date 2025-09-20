@@ -2,16 +2,18 @@ export function Header() {
   const header = document.createElement("header");
   header.innerHTML = `
   <div id="header" class="header-container">
-    <a href="#" class="header-logo">MS</a>
-    <button class="menu-toggle" aria-label="Abrir Menu">☰</button>
-    <nav class="header-nav">
+    <div class="header-area">
+      <a href="#" class="header-logo">MS</a>
+      <button class="menu-toggle" aria-label="Abrir Menu">☰</button>
+      <nav class="header-nav">
         <ul>
           <li><a class="header-link" href="#">Início</a></li>
           <li><a class="header-link" href="#">Sobre</a></li>
           <li><a class="header-link" href="#">Projetos</a></li>
           <li><a class="header-link" href="#">Contato</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
   </div>
     `;
 

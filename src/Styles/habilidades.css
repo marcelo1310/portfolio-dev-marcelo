@@ -18,7 +18,7 @@
 .skills-container {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 80px));
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   gap: 20px;
   width: 100%;
   margin: 0 auto;
@@ -26,6 +26,9 @@
 }
 
 .skill-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
   background: transparent;
   transition: transform 0.3s ease;
 }
@@ -44,4 +47,25 @@
 .skill-card p {
   margin-top: 10px;
   font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+}
+
+@media (min-width: 1024px) {
+  .skills-container {
+    max-width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+}
+
+@media (min-width: 1440px) {
+  .skills-container {
+    max-width: 70%;
+  }
+  
 }
