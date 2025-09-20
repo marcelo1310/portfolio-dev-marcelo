@@ -7,7 +7,7 @@ export function Sobre() {
     
       <h2>Sobre Mim</h2>
       <div class="area-sobre">
-        <div class="texto">
+        <div class="sobre-texto">
           <h3>Olá, sou o <span>Marcelo dos Santos</span>, e essa é minha trajetória na tecnologia.</h3>
           <p>Sou desenvolvedor em formação, com experiência prática em React, TypeScript, Java e desenvolvimento web. Tenho facilidade em trabalhar em equipe, resolução de problemas e aprender novas tecnologias rapidamente.</p>
           <p>Meu objetivo é construir soluções funcionais, bem estruturadas e simples de usar. Creio que programação não é apenas sobre escrever código, mas também sobre entregar valor real para pessoas e negócios.</p>
