@@ -34,12 +34,12 @@
   color: var(--cinza2);
 }
 
-.texto h3 {
+.sobre-texto h3 {
   font-size: 1.5rem;
   color: var(--branco);
 }
 
-.texto span {
+.sobre-texto span {
   color: var(--vermelho);
 }
 
