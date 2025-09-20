@@ -18,8 +18,10 @@ body {
 
 :root {
   --branco: #fefefe;
-  --vermelho:  #c23112;
+  --vermelho:  #4169E1;
   --grafite:#212529;
   --cinza1: #343a40;
   --cinza2: #909294;
 }
+
+/* #c23112*/
