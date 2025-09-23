@@ -1,10 +1,12 @@
-import {Header} from './Sections/Header.js';
-import { Hero } from './Sections/Hero.js';
-import { Sobre } from './Sections/Sobre.js';
-import { Habilidades } from './Sections/Habilidades.js';
-import { Projetos } from './Sections/Projetos.js';
-import { Contato } from './Sections/Contato.js';
-import { Footer } from './Sections/Footer.js';
+import {Header} from './Sections/Header';
+import { Hero } from './Sections/Hero';
+import { Sobre } from './Sections/Sobre';
+import { Habilidades } from './Sections/Habilidades';
+import { Projetos } from './Sections/Projetos';
+import { Contato } from './Sections/Contato';
+import { Footer } from './Sections/Footer';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 
 const app = document.querySelector('#app');
 

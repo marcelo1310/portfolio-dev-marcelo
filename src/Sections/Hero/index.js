@@ -1,5 +1,5 @@
-import img from "../img/og-img.jpg";
-import { Botao } from "../Components/Botao/Botao";
+import img from "../../img/og-img.jpg";
+import { Botao } from "../../Components/Botao";
 
 export function Hero() {
   const hero = document.createElement("section");
@@ -12,16 +12,16 @@ export function Hero() {
          <h1>Transformo <span>ideias</span> em <span>soluções digitais</span> inteligentes</h1>
         </div>
         <p>Meu foco é desenvolver aplicações modernas, escaláveis e centradas no usuário, ajudando empresas a se destacarem no ambiente digital.</p>
-        <div class="area-btn"></div>
+        <div class="btn-hero"></div>
       </div>
     </div>
   `;
 
   const btnChamada = Botao("Contate-me", "#contato", "animacao-sombra");
-  hero.querySelector(".area-btn").appendChild(btnChamada);
+  hero.querySelector(".btn-hero").appendChild(btnChamada);
 
   const btnProjetos = Botao("Projetos", "#projetos");
-  hero.querySelector(".area-btn").appendChild(btnProjetos);
+  hero.querySelector(".btn-hero").appendChild(btnProjetos);
 
   return hero;
 }

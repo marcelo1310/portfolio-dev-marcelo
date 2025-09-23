@@ -10,7 +10,6 @@
   color: var(--branco);
   padding: 1rem;
   z-index: 10;
-  background-color: transparent;
   transition: all 0.5s ease;
 }
 
@@ -23,14 +22,12 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: transparent;
 }
 
 .header-logo {
   font-weight: bold;
   z-index: 20;
   font-size: 1.5rem;
-  background-color: transparent;
   text-decoration: none;
   color: var(--branco);
   padding: 10px;
@@ -70,11 +67,6 @@
   align-items: center;
   gap: 1.5rem;
   padding: 3rem;
-  background-color: transparent;
-}
-
-.header-nav li {
-  background-color: transparent;
 }
 
 .header-nav a {
@@ -82,7 +74,6 @@
   text-decoration: none;
   font-size: 1.2em;
   font-weight: bold;
-  background-color: transparent;
    transition: all 0.3s ease;
 
   &:hover {
@@ -127,8 +118,8 @@
     flex-direction: row;
     padding: 0;
     justify-content: flex-end;
-    background-color: transparent;
     backdrop-filter: initial;
+    background-color: transparent;
   }
 
   .header-nav ul {

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 3rem;
   padding: 3rem 2rem;
   text-align: center;
   color: var(--branco);
@@ -11,8 +10,7 @@
 
 .habilidades-container h2 {
   font-size: 2.5rem;
-  margin-bottom: 3rem;
-  background-color: transparent;
+  margin-bottom: 3rem;;
 }
 
 .skills-container {
@@ -22,14 +20,12 @@
   gap: 20px;
   width: 100%;
   margin: 0 auto;
-  background-color: transparent;
 }
 
 .skill-card {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  background: transparent;
   transition: transform 0.3s ease;
 }
 
@@ -37,11 +33,10 @@
   width: 100%;
   height: auto;
   border-radius: 10px;
-  background-color: transparent;
 }
 
-.skill-card:hover {
-  transform: translateY(-5px);
+.skill-card img:hover {
+  transform: scale(1.03);
 }
 
 .skill-card p {

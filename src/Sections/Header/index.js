@@ -1,4 +1,4 @@
-import { Botao } from "../Components/Botao/Botao";
+import { Botao } from "../../Components/Botao";
 export function Header() {
   const header = document.createElement("header");
   header.innerHTML = `

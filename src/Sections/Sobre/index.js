@@ -1,5 +1,5 @@
-import minhaImg from "../img/eu.jpg";
-import { Botao } from "../Components/Botao/Botao";
+import minhaImg from "../../img/eu.jpg";
+import { Botao } from "../../Components/Botao";
 export function Sobre() {
   const sobre = document.createElement("section");
   sobre.innerHTML = `
@@ -21,7 +21,7 @@ export function Sobre() {
             <p><strong>Nome:</strong> Marcelo dos Santos</p>
             <p><strong>Idade:</strong> 35 anos</p>
             <p ><strong>Email:</strong> <a href="mailto:marcelopaulomsp@gmail.com">marcelopaulomsp@gmail.com</a></p>
-            <div class="btn"></div>
+            <div class="btn-sobre"></div>
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@ export function Sobre() {
     </div>
   `;
 
-  const btnChamada = Botao("Fale no WhatsApp", "#contato", "animacao-sombra");
-    sobre.querySelector(".btn").appendChild(btnChamada);
+  const btnChamada = Botao("Fale no WhatsApp", "#contato");
+    sobre.querySelector(".btn-sobre").appendChild(btnChamada);
   return sobre;
 }
